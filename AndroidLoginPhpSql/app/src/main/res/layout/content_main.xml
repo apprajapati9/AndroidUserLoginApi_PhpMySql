@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="www.apprajapati.AndroidLogin.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+        <!--image on top of screen -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/blogsymbol"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:id="@+id/username"
+            android:textSize="16sp"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+
+            android:id="@+id/username_login"
+            android:layout_below="@+id/username"
+            android:layout_alignLeft="@+id/username"
+            android:layout_alignStart="@+id/username" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:id="@+id/password"
+
+            android:textSize="16sp"
+            android:layout_below="@+id/username_login"
+            android:layout_alignLeft="@+id/username_login"
+            android:layout_alignStart="@+id/username_login"
+            />
+
+        <!--em is font size  -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password_login"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/password"
+            android:layout_alignLeft="@+id/password"
+            android:layout_alignStart="@+id/password" />
+
+        <Button
+            android:layout_width="@dimen/login_register_width"
+            android:layout_height="@dimen/login_register_height"
+            android:text="@string/login"
+            android:id="@+id/login_button"
+            android:layout_below="@+id/password_login"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="20dp"
+            android:background="#20000000"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have account Yet? Click below to Register"
+            android:id="@+id/alternative"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/login_button"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:layout_width="@dimen/login_register_width"
+            android:layout_height="@dimen/login_register_height"
+            android:text="@string/register_button"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/register_button"
+        android:background="#20000000"
+            android:layout_below="@+id/alternative"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>
